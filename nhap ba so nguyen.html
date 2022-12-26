@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ello</title>
+</head>
+<body>
+
+<div>
+
+    <input type="text" name="a" id="a"> <br>
+    <input type="text" name="b" id="b"> <br>
+    <input type="text" name="c" id="c">
+
+</div>
+
+<button onclick="checkMax()">Find max</button>
+
+<p id="display"></p>
+
+<script>
+
+    function checkMax() {
+
+        let a = document.getElementById('a').value
+        let b = document.getElementById('b').value
+        let c = document.getElementById('c').value
+        let max = a
+
+        if (a<b) {
+            max = b
+        }
+
+        if (max<c) {
+            max = c
+        }
+
+        document.getElementById('display').innerText = "highest number " + max
+    }
+
+</script>
+
+</body>
+</html>
